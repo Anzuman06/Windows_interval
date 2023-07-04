@@ -1,1 +1,1 @@
-This is a small non-agent packaged app that runs on every devices like android,windows,chrome. It works like an Interval that print hello_@meldCX each line at every seconds on pressing Start button and stop printing on pressing Stop button.
+This small non-agent packaged app runs on every device like Android, Windows, and Chrome. It works like an Interval that prints hello_@meldCX for each line every second on pressing the Start button and stops printing on pressing the Stop button.
