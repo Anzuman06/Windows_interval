@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1   {color: black;}
+        h1   {text-align: center;}
+        h2   {text-align: center;}
+        .button1 {margin: 10px; background-color: brown;}
+        .button2 {margin: 10px; background-color: rgb(99, 85, 155);}
+        .flex-parent {
+          display: flex;
+             }
+        .jc-center {
+           justify-content: center;
+            }
+    </style>
+    <h1 style="font-size: 80px;">AgentLess Application</h1>
+    <div class="flex-parent jc-center">
+      <button class="button button1" onclick="myStop()"><b><h2>Stop</h2></b></button><br><br>
+      <button class="button button2" onclick="myStart()"><b><h2>Start</h2></b></button>
+    </div>
+</head>
+<body>
+    <p id="agentL" ></p>
+    <script> 
+    let myInterval = null
+    function myStart() { 
+    myInterval = setInterval(()=>{
+    console.log(document.getElementById("agentL").innerHTML += " hello_@meldCX " + "<br>")
+    },1000);
+  }
+    function myStop() {
+       clearInterval(myInterval);
+     }  
+    </script>
+</body>
+</html>
